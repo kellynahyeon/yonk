@@ -1,0 +1,13 @@
+pragma solidity ^0.8.0;
+
+contract IdentityVerification {
+    mapping(address => string) public identities;
+
+    function storeIdentity(address user, string memory dataHash) public {
+        identities[user] = dataHash;
+    }
+
+    function verifyIdentity(address user, string memory dataHash) public view returns (bool) {
+        return keccak256(abi.encodePacked(identities[user])) == keccak256(abi.encodePacked(dataHash));
+    }
+}

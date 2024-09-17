@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR 코드 확인</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        .top-bar {
+            width: 100%;
+            height: 50px;
+            background-color: #E4EDF2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+
+        .logo {
+            height: 30px;
+        }
+
+        .title-text {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-left: 8px;
+            white-space: nowrap;
+        }
+
+        .menu-icon {
+            height: 30px;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .circle-icon {
+            width: 100px;
+            height: 100px;
+            background-color: #eee;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px auto;
+            position: relative;
+        }
+
+        .circle-icon img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .checkmark-icon {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            font-size: 14px;
+            color: #777;
+            line-height: 1.5;
+            white-space: pre-wrap;
+        }
+
+        .highlight {
+            color: #007bff; /* 파란색으로 강조 */
+            font-weight: bold;
+        }
+
+        .box {
+            width: 200px;
+            height: 50px;
+            background-color: #ddd;
+            margin: 20px auto 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px; /* 모서리를 둥글게 설정 */
+            text-decoration: none; /* 링크의 기본 밑줄 제거 */
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* 클릭 시 색상 변화 */
+        }
+
+        .box:hover {
+            background-color: #ccc; /* 마우스를 올렸을 때 색상 변화 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div style="display: flex; align-items: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Emblem_of_the_Government_of_the_Republic_of_Korea.svg/1200px-Emblem_of_the_Government_of_the_Republic_of_Korea.svg.png" alt="Logo" class="logo">
+            <span class="title-text">주민등록증 모바일 확인서비스</span>
+        </div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3502/3502458.png" alt="Menu Icon" class="menu-icon">
+    </div>
+
+    <div class="container">
+        <div class="circle-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/1250/1250568.png" alt="ID Card Icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Eo_circle_light-blue_checkmark.svg/768px-Eo_circle_light-blue_checkmark.svg.png?20200417144731" alt="Checkmark Icon" class="checkmark-icon">
+        </div>
+        <h1 class="title">홍길동</h1>
+        <p class="subtitle">2024-08-10</p>
+        <p class="message">
+            요청하신 정보의 진위를 확인한 결과,<br>
+            주민등록증 수록 사항과 <span class="highlight">일치합니다</span>.
+        </p>
+        <a href="#" class="box">클릭 가능한 박스</a>
+    </div>
+
+</body>
+</html>
